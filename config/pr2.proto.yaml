@@ -78,8 +78,11 @@ segments:
         - [0x299d80, rodatabin, gcc_except_table] # .gcc_except_table
         - [0x299f00, rodatabin] # .lit4
         - [0x29a300, rodatabin] # .sdata
+        - [0x29a308, .sdata, dbug/vramsave] # .sdata
+        - [0x29a310, rodatabin] # .sdata
         - [0x29a318, .sdata, os/syssub] # .sdata
         - [0x29a330, rodatabin] # .sdata
         - [0x29a9d8, rodatabin] # .sbss / .bss
+
     - [0x29b000, databin] # .mfifo
     - [0x8aaf0d]

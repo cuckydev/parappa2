@@ -22,9 +22,15 @@ typedef float f32;
 #define UNK_FUN_PTR(name) void(*name)(void)
 #define UNK_ARGS
 
+#ifndef NULL
 #define NULL 0
+#endif
+#ifndef TRUE
 #define TRUE 1
+#endif
+#ifndef FALSE
 #define FALSE 0
+#endif
 
 #define PR_ARRAYSIZEU(arr) (sizeof(arr) / sizeof(arr[0]))
 #define PR_ARRAYSIZE(arr)  (s32)(sizeof(arr) / sizeof(arr[0]))
